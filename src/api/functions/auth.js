@@ -2,11 +2,11 @@ import axios from 'axios';
 import { API_URL, API_GET_HEADERS } from 'api/constants';
 
 const register = ( newUser ) => {
-	return axios.post(API_URL+'register', {...newUser, app_name: 'unify-web'});
+	return axios.post(API_URL+'register', {...newUser, app_name: 'launchriot-web'});
 };
 
 const login = ( user ) => {
-	return axios.post(API_URL+'login', {...user, app_name: 'unify-web'});
+	return axios.post(API_URL+'login', {...user, app_name: 'launchriot-web'});
 };
 
 const logout = () => {
